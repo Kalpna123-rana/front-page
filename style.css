@@ -84,7 +84,7 @@ body {
 }
 
 .product-info p::before {
-    content: "BAMBOO TISSUE ROLLS";
+    content: "TISSUE ROLLS";
    
     position: absolute;
     color: #008000;
@@ -199,7 +199,7 @@ body {
     .product-info p::before {
         font-size: 100%; 
         top: 0.5%; 
-        left: 25%;
+        left: 30%;
         -webkit-text-stroke: 1% blue; 
     }
 }
