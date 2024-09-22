@@ -23,8 +23,8 @@ body {
 
 .discount {
     position: absolute;
-    top: 10%;
-    margin-left:30%;
+    top: 14%;
+    margin-left:40%;
     background-color: #ff3d00;
     color: white;
     padding: 5px 10px;
@@ -83,7 +83,7 @@ body {
     font-size: 1.2rem; 
 }
 
-.product-info p::before {
+/* .product-info p::before {
     content: "BATHROOM TISSUES";
    
     position: absolute;
@@ -94,21 +94,21 @@ body {
     -webkit-text-stroke: 1px blue;
     z-index: 1;
     transform: translate(-10%, -10%);
+} */
+.product-info p::before {
+    content: "BATHROOM TISSUES";
+    position: absolute;
+    color: #008000;
+    top: 10px;  
+    left: 50%;
+    font-size: 2rem; 
+    -webkit-text-stroke: 1px blue;
+    z-index: 1;
+    transform: translateX(-50%);  
 }
  
 
-/*.product-info p::before{
-    content: "BAMBOO. TISSUE. ROLLS.";
-    position: absolute;
-    color: #008000;
-    top: -6%;
-    left: -6%;
-    -webkit-text-stroke: 2px #ff3d00;
-    font-size: 2em;  
-  margin-top: 10%;
-   margin-left: 30%;
 
-} */
 
 
 
@@ -185,7 +185,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .product-info p::before {
         font-size: 100%;
         top: 1%;
@@ -202,4 +202,29 @@ body {
         left: 28%;
         -webkit-text-stroke: 1% blue; 
     }
+}  */ 
+
+@media (max-width: 768px) {
+    .product-info p::before {
+        font-size: 1.5rem;
+        top: 10px;
+        -webkit-text-stroke: 1px blue;  /* Consistent stroke */
+    }
+}
+
+@media (max-width: 380px) {
+    .product-info p::before {
+        font-size: 1.2rem;  /* Slightly smaller font */
+        top: 8px;  /* Adjusted for smaller screens */
+        -webkit-text-stroke: 0.8px blue;
+    }
+}
+
+
+
+@media (max-width: 380px) {
+.discount {
+          top:50px;  
+          border-radius: 50%;    
+}
 }
