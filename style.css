@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+}
+
+.product {
+    width: 90%; 
+    max-width: 500px; 
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #95C11E;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.discount {
+    position: absolute;
+    top: 10%;
+    margin-left:30%;
+    background-color: #ff3d00;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.leaf-left, .leaf-right {
+    position: absolute;
+    width: 65px;
+    top: -5%;
+}
+
+.leaf-left {
+    margin-top: 2%;
+    left: -1%;
+    height: 25%;
+    border-radius: 50%;
+
+}
+
+.leaf-right {
+    margin-top: 2%;
+    right: -1%;
+    height: 25%;
+    border-radius: 50%;
+}
+
+.product-image img {
+    margin-top: 25%;
+    width: 100%; 
+    max-width: 300%;
+    border-radius: 20%;
+}
+.product-info {
+    margin-top: 5%;
+}
+.product-info h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.2rem; 
+}
+
+.product-info p::before {
+    content: "BAMBOO TISSUE ROLLS";
+   
+    position: absolute;
+    color: #008000;
+    top: 1%; /* Adjusted for better positioning */
+    left: 30%;
+    font-size: 100%;  /* Scales with the parent element */
+    -webkit-text-stroke: 1px blue;
+    z-index: 1; /* Keeps the pseudo-element behind the main text */
+    transform: translate(-10%, -10%); /* Optional fine-tuning for positioning */
+}
+ 
+
+/*.product-info p::before{
+    content: "BAMBOO. TISSUE. ROLLS.";
+    position: absolute;
+    color: #008000;
+    top: -6%;
+    left: -6%;
+    -webkit-text-stroke: 2px #ff3d00;
+    font-size: 2em;  
+  margin-top: 10%;
+   margin-left: 30%;
+
+} */
+
+
+
+
+.gentle {
+    text-align: center;
+    color: #ff3d00;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.quantity {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+    margin: 10px auto;
+    width: fit-content;
+}
+
+.sub-text {
+    text-align: center;
+    font-size: 1rem;
+    color: blue;
+    padding: 20px 0;
+    font-weight: bold;
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    display: block;
+    border-radius: 0 0 10px 10px;
+}
+
+
+@media (max-width: 768px) {
+    .product {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .product-info h1 {
+        font-size: 2rem;
+    }
+
+    .gentle {
+        font-size: 1.5rem;
+    }
+
+    .quantity {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        padding: 10px;
+    }
+
+    .product-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .gentle {
+        font-size: 1.2rem;
+    }
+
+    .quantity {
+        font-size: 1rem;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-info p::before {
+        font-size: 100%;
+        top: 1%;
+        left: 30%;
+        -webkit-text-stroke: 1.5% blue;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .product-info p::before {
+        font-size: 100%; 
+        top: 0.5%; 
+        left: 25%;
+        -webkit-text-stroke: 1% blue; 
+    }
+}
