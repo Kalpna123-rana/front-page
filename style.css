@@ -84,16 +84,16 @@ body {
 }
 
 .product-info p::before {
-    content: "TISSUE ROLLS";
+    content: "BATHROOM TISSUES";
    
     position: absolute;
     color: #008000;
-    top: 1%; /* Adjusted for better positioning */
+    top: 1%;
     left: 30%;
-    font-size: 100%;  /* Scales with the parent element */
+    font-size: 100%; 
     -webkit-text-stroke: 1px blue;
-    z-index: 1; /* Keeps the pseudo-element behind the main text */
-    transform: translate(-10%, -10%); /* Optional fine-tuning for positioning */
+    z-index: 1;
+    transform: translate(-10%, -10%);
 }
  
 
