@@ -83,33 +83,18 @@ body {
     font-size: 1.2rem; 
 }
 
-/* .product-info p::before {
+ .product-info p::before {
     content: "BATHROOM TISSUES";
    
     position: absolute;
     color: #008000;
     top: 1%;
-    left: 30%;
-    font-size: 100%; 
-    -webkit-text-stroke: 1px blue;
-    z-index: 1;
-    transform: translate(-10%, -10%);
-} */
-.product-info p::before {
-    content: "BATHROOM TISSUES";
-    position: absolute;
-    color: #008000;
-    top: 1%;  
     left: 50%;
     font-size: 100%; 
     -webkit-text-stroke: 1px blue;
     z-index: 1;
-    transform: translateX(-50%);  
-}
- 
-
-
-
+    transform: translateX(-50%);
+} 
 
 
 
